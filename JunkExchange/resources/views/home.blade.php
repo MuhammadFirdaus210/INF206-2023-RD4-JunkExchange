@@ -4,7 +4,7 @@
 @section('container')
     <div class="container-contain">
         <div class="hero">
-            <img src="images/logo.png" alt="">
+            <img src="images/thumbnail.png" alt="">
         </div>
         <div class="tagline">
             <h6>Pertukaran Populer : </h6>
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="card shadow" style="background-color: #2ABA86;">
-                    <img src="/images/test.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
+                    <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
                         <a class="text-white text-decoration-none" href="#">Something</a>
                     </div>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="card shadow" style="background-color: #2ABA86;">
-                    <img src="/images/test.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
+                    <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
                         <a  class="text-white text-decoration-none" href="#">Something</a>
                     </div>

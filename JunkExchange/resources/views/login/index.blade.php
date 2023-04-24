@@ -5,7 +5,7 @@
 
         <div class="hero">
             <a href="/">
-                <img src="images/logo.png" style="width:10%" alt="">
+                <img src="images/thumbnail.png" style="width:10%" alt="">
             </a>
         </div>
         <div class="container-contain shadow">
