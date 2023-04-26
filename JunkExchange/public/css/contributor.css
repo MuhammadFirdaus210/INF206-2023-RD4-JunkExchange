@@ -1,0 +1,101 @@
+/* Rectangle 13 */
+
+.bar1 {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36.98px;
+    background: #ffffff;
+    border: 0.725006px solid #2aba86;
+}
+
+.text {
+    padding-top: 5px;
+    padding-right: 20px;
+    color: #2aba86;
+    font-weight: bold;
+}
+
+.sidebar {
+    position: absolute;
+    width: 273px;
+    height: 87%;
+    left: 0px;
+
+    background: #2aba86;
+}
+
+.sidebar a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.sidebar-text {
+    padding-left: 10px;
+}
+
+.card-body {
+    padding-left: 310px;
+    width: 75%;
+}
+
+.img-upload {
+    /* Rectangle 46 */
+
+    box-sizing: border-box;
+
+    width: 296px;
+    height: 396px;
+    left: 71px;
+    top: 133px;
+
+    background: #dcdcdc;
+    border: 1px solid #2aba86;
+    border-radius: 11px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.img-text {
+    border: 2px solid #2aba86;
+    border-radius: 11px;
+    width: 97%;
+    height: 97%;
+    padding-top: 115px;
+    padding-left: 25px;
+}
+
+.dasbor-tittle {
+    color: #2aba86;
+    font-size: 40px;
+    border: 2px solid #2aba86;
+    padding-left: 300px;
+}
+
+.form-control {
+    background-color: #dcdcdc;
+    border-bottom: 2px solid #2aba86;
+    width: 80%;
+}
+
+.img-upload label {
+    color: #2aba86;
+}
+/* Style untuk container gambar
+#gambar-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+Style untuk gambar
+.gambar-item {
+    flex-basis: 200px;
+    margin: 10px;
+}
+.gambar-item img {
+    width: 100%;
+    height: auto;
+} */
