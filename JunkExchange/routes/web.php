@@ -32,7 +32,9 @@ Route::get('/dasbor', function () {
     return view('dasbor');
 });
 
-
+Route::get('/search', function () {
+    return view('search');
+});
 
 
 Route::resource("/datas", DataController::class);
