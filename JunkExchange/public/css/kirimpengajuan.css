@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:#2cb67d ;
+    background-size: 100%;
+    background-position: 0 45px;
+  }
+
+  .toolbar {
+    background-color: #fff;
+    padding: 8px 25px;
+    text-align: center;
+  }
+  
+  .toolbar a {
+    text-decoration: none;
+    color: #2cb67d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+ 
+  .main h1{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 55.4px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .main h3{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .shape{
+    width: 100%;
+    min-height: 0px;
+  }
+
+  .lingkaran1{
+    position: absolute;
+    left: 264.63px;
+    top: 350px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 100%;
+  }
+
+  .lingkaran2{
+    position: absolute;
+    left: 671.36px;
+    top: 350px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 100%;
+  }
+
+  .lingkaran3{
+    position: absolute;
+    left: 1079.53px;
+    top: 350px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 100%;
+  }
+
+  .garis{
+    position: absolute;
+    left: 294.35px;
+    top: 376.53px;
+	width: 815.63px;
+    height: 12.33px;
+	background: #fff;
+	border-radius: 23.2px;
+  }
+
+  .footer{
+    text-align: center;
+  }
+
+  .footer p{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .footer p a{
+    color: #fff;
+    font-weight: bold;
+  }
