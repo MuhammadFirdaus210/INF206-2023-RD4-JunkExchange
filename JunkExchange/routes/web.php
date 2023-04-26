@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,18 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/dasbor', function () {
+    return view('dasbor');
+});
+
+
+
+
+Route::resource("/datas", DataController::class);
+
 route::get('/login', [LoginController::class, 'create']);
 route::get('/register', [RegisterController::class, 'create']);
 route::post('/register', [RegisterController::class, 'store']);
+
+// Route::post('/image/create', 'ImageController@create')->name('image.create');
+// Route::get('/image', 'ImageController@index')->name('image.index');
