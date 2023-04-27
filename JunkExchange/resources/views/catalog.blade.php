@@ -3,7 +3,7 @@
 @section('container')
 
 @include('partials.hypernav')
-<div class="container">
+<div class="container mt-5">
     <div class="col">
         <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
     </div>
@@ -31,8 +31,72 @@
             </div>
         </div>
     </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow" style="background-color: #2ABA86;">
+            <img src="/images/exmple.jpg" style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
+            <div class="card-body p-1 px-3">
+                <a  class="text-white text-decoration-none" href="/product">Product</a>
+            </div>
+        </div>
+    </div>
 
   </div>
 </div>
-<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/catalog.css">
 @endsection
