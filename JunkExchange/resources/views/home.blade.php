@@ -31,7 +31,7 @@
                 <div class="card shadow" style="background-color: #2ABA86;">
                     <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
-                        <a class="text-white text-decoration-none" href="/search">Something</a>
+                        <a class="text-white text-decoration-none" href="/catalog">Something</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 <div class="card shadow" style="background-color: #2ABA86;">
                     <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
-                        <a  class="text-white text-decoration-none" href="/search">Something</a>
+                        <a  class="text-white text-decoration-none" href="/catalog">Something</a>
                     </div>
                 </div>
             </div>
