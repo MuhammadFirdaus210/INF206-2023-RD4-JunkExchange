@@ -32,8 +32,8 @@ Route::get('/dasbor', function () {
     return view('dasbor');
 });
 
-Route::get('/search', function () {
-    return view('search');
+Route::get('/catalog', function () {
+    return view('catalog');
 });
 
 Route::get('/product', function () {
