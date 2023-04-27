@@ -36,9 +36,14 @@ Route::get('/search', function () {
     return view('search');
 });
 
+Route::get('/product', function () {
+    return view('product');
+});
+
 Route::get('/kirimpengajuan', function () {
     return view('kirimpengajuan');
 });
+
 
 
 Route::resource("/datas", DataController::class);
