@@ -3,3 +3,20 @@
     font-weight: normal;
     text-decoration: none;
   }
+
+  .hyperNav {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36.98px;
+    background: #ffffff;
+    border-bottom: 1px solid #2aba86;
+}
+
+  .hyperNav .text {
+    padding-top: 5px;
+    padding-right: 20px;
+    color: #2aba86;
+    font-weight: bold;
+}

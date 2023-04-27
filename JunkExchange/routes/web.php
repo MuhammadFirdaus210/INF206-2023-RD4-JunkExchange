@@ -32,6 +32,17 @@ Route::get('/dasbor', function () {
     return view('dasbor');
 });
 
+Route::get('/catalog', function () {
+    return view('catalog');
+});
+
+Route::get('/product', function () {
+    return view('product');
+});
+
+Route::get('/kirimpengajuan', function () {
+    return view('kirimpengajuan');
+});
 
 
 

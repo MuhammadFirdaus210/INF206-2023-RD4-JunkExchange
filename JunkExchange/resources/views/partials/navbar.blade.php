@@ -1,4 +1,4 @@
-<nav class="nav px-2 py-2 shadow" style="background-color: #2aba86">
+<nav class="nav px-2 py-2 shadow sticky-top" style="background-color: #2aba86">
     <ul class="nav">
         <li>
             <a href="/dasbor">
