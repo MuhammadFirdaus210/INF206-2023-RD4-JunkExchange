@@ -38,7 +38,7 @@
                         <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn text-white" type="submit" style="background-color: #2ABA86">Ajukan</button>
+                        <a class="btn text-white" href="/kirimpengajuan" type="submit" style="background-color: #2ABA86">Ajukan</a>
                     </div>
                 </div>
             </div>
