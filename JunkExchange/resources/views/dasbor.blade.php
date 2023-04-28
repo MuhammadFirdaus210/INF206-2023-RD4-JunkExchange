@@ -32,7 +32,7 @@
             <div class="cards">
                 <div class="card-body">
                     <form action="{{ url('/datas') }}" method="post" enctype="multipart/form-data" style="display: flex;">
-
+                        {!! csrf_field() !!}
                         <div class="img-upload">
                             <div class="img-text">
                                 <img src="images/upload.png" alt="" width="150" height="100" style="padding-left: 50px;" />
@@ -45,17 +45,17 @@
                             <div class="img-upload" style="height: 80%; ">
                                 <div style="padding-left: 20px; padding-top: 20px;">
 
-                                    <label>Nama Barang</label></br>
-                                    <input type="text" name="name" id="name" class="form-control"></br>
-                                    <label>Deskripsi</label></br>
-                                    <input type="text" name="description" id="description" class="form-control"></br>
-                                    <label>Berat</label></br>
-                                    <input type="text" name="weight" id="weight" class="form-control"></br>
+                                    <label>Nama Barang</label> <br>
+                                    <input type="text" name="name" id="name" class="form-control"><br>
+                                    <label>Deskripsi</label><br>
+                                    <input type="text" name="description" id="description" class="form-control"><br>
+                                    <label>Berat</label><br>
+                                    <input type="text" name="weight" id="weight" class="form-control"><br>
                                 </div>
                             </div>
                             <div style="padding-top: 20px;">
                                 <input type="submit" value="Save" class="btn text-white"
-                                    style="width: 295px; height: 50px; background-color: #2ABA86;"></br>
+                                    style="width: 295px; height: 50px; background-color: #2ABA86;"><br>
                             </div>
                         </div>
                     </form>
