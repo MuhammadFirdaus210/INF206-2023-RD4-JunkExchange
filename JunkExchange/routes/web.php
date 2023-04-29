@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\CatalogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +33,9 @@ Route::get('/dasbor', function () {
     return view('dasbor');
 })->middleware('auth');
 
-Route::get('/catalog', function () {
-    return view('catalog');
-});
+// Route::get('/catalog', function () {
+//     return view('catalog');
+// });
 
 Route::get('/product', function () {
     return view('product');
@@ -46,6 +47,7 @@ Route::get('/kirimpengajuan', function () {
 
 
 
+Route::resource("/catalog", CatalogController::class)->middleware('auth');
 Route::resource("/datas", DataController::class)->middleware('auth');
 
 route::get('/login', [LoginController::class, 'create'])->name('login')->middleware('guest');
