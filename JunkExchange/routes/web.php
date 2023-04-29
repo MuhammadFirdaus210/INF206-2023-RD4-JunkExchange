@@ -30,7 +30,7 @@ Route::get('/contact', function () {
 
 Route::get('/dasbor', function () {
     return view('dasbor');
-});
+})->middleware('auth');
 
 Route::get('/catalog', function () {
     return view('catalog');
@@ -46,10 +46,14 @@ Route::get('/kirimpengajuan', function () {
 
 
 
-Route::resource("/datas", DataController::class);
+Route::resource("/datas", DataController::class)->middleware('auth');
 
-route::get('/login', [LoginController::class, 'create']);
-route::get('/register', [RegisterController::class, 'create']);
+route::get('/login', [LoginController::class, 'create'])->name('login')->middleware('guest');
+route::post('/login', [LoginController::class, 'authenticate']);
+route::post('/logout', [LoginController::class, 'logout']);
+
+
+route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 route::post('/register', [RegisterController::class, 'store']);
 
 // Route::post('/image/create', 'ImageController@create')->name('image.create');
