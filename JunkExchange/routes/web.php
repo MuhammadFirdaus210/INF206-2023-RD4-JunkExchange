@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\CatalogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,10 +31,14 @@ Route::get('/contact', function () {
 
 Route::get('/dasbor', function () {
     return view('dasbor');
-});
+})->middleware('auth');
 
-Route::get('/search', function () {
-    return view('search');
+// Route::get('/catalog', function () {
+//     return view('catalog');
+// });
+
+Route::get('/product', function () {
+    return view('product');
 });
 
 Route::get('/kirimpengajuan', function () {
@@ -41,10 +46,16 @@ Route::get('/kirimpengajuan', function () {
 });
 
 
-Route::resource("/datas", DataController::class);
 
-route::get('/login', [LoginController::class, 'create']);
-route::get('/register', [RegisterController::class, 'create']);
+Route::resource("/catalog", CatalogController::class)->middleware('auth');
+Route::resource("/datas", DataController::class)->middleware('auth');
+
+route::get('/login', [LoginController::class, 'create'])->name('login')->middleware('guest');
+route::post('/login', [LoginController::class, 'authenticate']);
+route::post('/logout', [LoginController::class, 'logout']);
+
+
+route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 route::post('/register', [RegisterController::class, 'store']);
 
 // Route::post('/image/create', 'ImageController@create')->name('image.create');

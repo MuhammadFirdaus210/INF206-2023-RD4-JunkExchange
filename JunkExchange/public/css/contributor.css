@@ -1,28 +1,13 @@
 /* Rectangle 13 */
 
-.bar1 {
+.container-contain {
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 100%;
-    height: 36.98px;
-    background: #ffffff;
-    border: 0.725006px solid #2aba86;
-}
-
-.text {
-    padding-top: 5px;
-    padding-right: 20px;
-    color: #2aba86;
-    font-weight: bold;
-}
+  }
 
 .sidebar {
-    position: absolute;
     width: 273px;
-    height: 87%;
+    height: 100vh;
     left: 0px;
-
     background: #2aba86;
 }
 
@@ -35,11 +20,6 @@
 
 .sidebar-text {
     padding-left: 10px;
-}
-
-.card-body {
-    padding-left: 310px;
-    width: 75%;
 }
 
 .img-upload {
@@ -71,7 +51,8 @@
 .dasbor-tittle {
     color: #2aba86;
     font-size: 40px;
-    border: 2px solid #2aba86;
+    border: 1px solid #2aba86;
+    border-bottom: 2px solid #2aba86;
     padding-left: 300px;
 }
 

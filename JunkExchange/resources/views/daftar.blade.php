@@ -1,26 +1,6 @@
 @extends('layouts.main') @section('container')
 
-<body>
-    <div class="bar1">
-        <a>
-            <p class="text">Keranjang</p>
-        </a>
-        <a>
-            <p class="text">Kotak</p>
-        </a>
-        <a>
-            <p class="text">Vas Bunga</p>
-        </a>
-        <a>
-            <p class="text">Boneka</p>
-        </a>
-        <a>
-            <p class="text">Bunga</p>
-        </a>
-        <a>
-            <p class="text">Mainan</p>
-        </a>
-    </div>
+<div class="container-contain">
     <div class="sidebar">
         <div style="padding-left: 15px; padding-top: 15px">
             <a href="/dasbor">
@@ -31,19 +11,23 @@
                 <img src="images/additem.png" alt="" width="25" height="25" />
                 <p class="sidebar-text">Pengajuan</p>
             </a>
-            <a href="/" style="padding-top: 460px">
+            <a href="/" class="">
                 <img src="images/back.png" alt="" width="25" height="25" />
                 <p class="sidebar-text">Kembali</p>
             </a>
         </div>
     </div>
-    <!-- awal upload img -->
-    <p class="dasbor-tittle" style="padding-top: 1px">Daftar Pengajuan</p>
+
+
+    <main class="content col-lg-10 px-md-5">
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h2 class="" style="color:#2ABA86"> <strong>Daftar Pengajuan</strong> </h2>
+        </div>
+        <!-- awal upload img -->
     <div class="container">
-        <br /><br />
         <div class="row">
-            <div class="col-lg-10"></div>
-            <div class="col-lg-2" style="padding-left: 75px">
+            <div class="">
                 <a
                     href="{{ url('/dasbor') }}"
                     class="btn btn-success"
@@ -53,7 +37,7 @@
                 </a>
             </div>
         </div>
-        <div style="padding-left: 250px; padding-top: 10px">
+        <div style="padding-top: 10px">
             <table class="table table-bordered table-striped" id="membersTable">
                 <thead>
                     <tr>
@@ -86,6 +70,10 @@
         </div>
     </div>
     <!-- akhir upload img -->
-</body>
+    </main>
+</div>
+<link rel="stylesheet" href="css/contributor.css">
+
+    
 
 @endsection

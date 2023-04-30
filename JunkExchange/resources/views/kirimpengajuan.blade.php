@@ -1,15 +1,10 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="main">
-    <div class="toolbar">
-        <a href="#">Keranjang</a>
-        <a href="#">Kotak</a>
-        <a href="#">Vas Bunga</a>
-        <a href="#">Boneka</a>
-        <a href="#">Bunga</a>
-        <a href="#">Mainan</a>
-    </div>
+
+@include('partials.hypernav')
+
+<div class="main mt-5">
         <h1>Selamat Form Pengajuan Sudah Terkirim</h1>
         <h3>Silahkan Menunggu Pesan Balasan Untuk Step Selanjutnya</h3>
 
