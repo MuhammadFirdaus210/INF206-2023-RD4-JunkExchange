@@ -1,15 +1,16 @@
+
 @extends('layouts.main')
 
 @section('container')
     
-    @include('partials.hypernav')
+@include('partials.hypernav')
 
     <div class="container d-flex gap-3 mt-5">
         
         <div class="card w-75" style="background-color: #2ABA86;">
-            <img src="images/exmple.jpg" class="card-img-top rounded-bottom h-100 object-fit-cover" alt="...">
+            <img src="{{ asset('storage/'.$item->photo) }}" class="card-img-top rounded-bottom h-100 object-fit-cover" alt="...">
             <div class="card-body p-1 px-3">
-                <a class="text-white text-decoration-none fs-1" href="#">Something</a>
+                <a class="text-white text-decoration-none fs-1" href="#">{{ $item->name }}</a>
             </div>
         </div>
 
@@ -18,13 +19,10 @@
             <div class="card-body">
                 <div>
                     <div class="d-flex justify-content-between">
-                        <span>Merk</span><span>example</span>
+                        <span>Kategori</span><span>{{ $item->category }}</span>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <span>Tahun</span><span>example</span>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <span>Model</span><span>example</span>
+                        <span>Berat</span><span>{{ $item->weight }}</span>
                     </div>
                     <div class="mt-4">
                         <h5>Barang untuk ditukarkan</h5>
@@ -43,7 +41,6 @@
                 </div>
             </div>
         </div>          
-        
     </div>
 
 @endsection

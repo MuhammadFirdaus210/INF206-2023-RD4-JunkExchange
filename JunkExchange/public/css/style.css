@@ -7,16 +7,14 @@
   .hyperNav {
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
     width: 100%;
-    height: 36.98px;
     background: #ffffff;
     border-bottom: 1px solid #2aba86;
 }
 
-  .hyperNav .text {
-    padding-top: 5px;
-    padding-right: 20px;
+  .hyperNav a {
     color: #2aba86;
+    padding: 5px 10px;
     font-weight: bold;
-}
+    text-decoration: none;
+} 

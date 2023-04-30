@@ -1,20 +1,19 @@
 <div class="hyperNav">
-    <a>
-        <p class="text">Keranjang</p>
+    <a href="">
+        Keranjang
     </a>
-    <a>
-        <p class="text">Kotak</p>
+    <a href="">
+        Kotak
     </a>
-    <a>
-        <p class="text">Vas Bunga</p>
+    <a href="">
+        Vas Bunga
     </a>
-    <a>
-        <p class="text">Boneka</p>
+    <a href="">
+        Boneka</a>
+    <a href="">
+        Bunga
     </a>
-    <a>
-        <p class="text">Bunga</p>
-    </a>
-    <a>
-        <p class="text">Mainan</p>
+    <a href="">
+        Mainan
     </a>
 </div>

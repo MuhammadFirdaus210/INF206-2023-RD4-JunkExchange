@@ -37,7 +37,7 @@
                             <div class="img-text">
                                 <img src="images/upload.png" alt="" width="150" height="100" style="padding-left: 50px;" />
                                 <input class="" name="photo" type="file" id="photo"
-                                    style="padding-left: 10px; padding-top: 100px;"> </br>
+                                    style="padding-left: 10px; padding-top: 100px;"> <br>
                             </div>
                         </div>
                         
@@ -47,8 +47,8 @@
 
                                     <label>Nama Barang</label> <br>
                                     <input type="text" name="name" id="name" class="form-control"><br>
-                                    <label>Deskripsi</label><br>
-                                    <input type="text" name="description" id="description" class="form-control"><br>
+                                    <label>Kategori</label><br>
+                                    <input type="text" name="category" id="category" class="form-control"><br>
                                     <label>Berat</label><br>
                                     <input type="text" name="weight" id="weight" class="form-control"><br>
                                 </div>

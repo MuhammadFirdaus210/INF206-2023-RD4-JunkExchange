@@ -10,5 +10,5 @@ class Datas extends Model
     use HasFactory;
     protected $table = 'Datas';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'description', 'weight','photo'];
+    protected $fillable = ['name', 'category', 'weight','photo'];
 }

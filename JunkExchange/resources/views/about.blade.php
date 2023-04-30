@@ -2,21 +2,55 @@
 
 @section('container')
 
-    <figure class="text-center" style="padding: 30px 0">
-            <blockquote class="blockquote">
-            <p>Website ini dapat digunakan untuk menukarkan barang bekas dengan barang recycle</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Kelompok 4
-            </figcaption>
-    </figure>
-    <img src="/images/thumbnail.png" class="mx-auto d-block" style="border-radius: 50%; height: 320px; width: 320px; background-color:#DCDCDC">
-    <h2 class="text-center" style="margin: 30px auto;">Junk Exchange</h2>
 
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;        
-            
-        }
-    </style>
+<div class="container-contain">
+    
+
+    <div class="title gap-3">
+        <div class="hero">
+            <img src="images/thumbnail.png" alt="">
+        </div>
+        
+        <div class="paragraph1">
+            <h2>Junk Exchange</h2>
+            <p><em>Tukar sampahmu dengan manfaat yang lebih besar</em></p>
+            <p>Junk Exchange adalah sebuah aplikasi pertukaran sampah yang bertujuan untuk<br>memudahkan masyarakat 
+            dalam mengelola sampah mereka dengan lebih efektif. Kami<br>percaya bahwa sampah bukanlah masalah, melainkan sebuah sumber daya
+            yang dapat<br>dimanfaatkan dan didaur ulang menjadi produk yang lebih berguna.</p>
+        </div>
+
+    </div>
+    
+        
+    <div class="icon">
+        <div>
+            <a class="tombol" href="http://Instagram.com/mhd.fir_"><img src="images/daus.jpg"></a>
+            <p>M. Firdaus</p>
+        </div>
+        <div>
+            <a class="tombol" href="https://instagram.com/eki_zamani?igshid=ZDdkNTZiNTM="><img src="images/zaki.jpg"></a>
+            <p>M. Zaki Zamani</p>
+        </div>
+        <div>
+            <a class="tombol" href="https://instagram.com/alfnsnf?igshid=ZDdkNTZiNTM="><img src="images/alfan.jpg"></a>
+            <p>M.Alfan Septian</p>
+        </div>
+        <div>
+            <a class="tombol" href="https://instagram.com/rahmatul_idami?igshid=ZDdkNTZiNTM="><img src="images/rahma.jpg"></a>
+            <p>Rahmatul Idami</p>
+        </div>
+        <div>
+            <a class="tombol" href="http://Instagram.com/afifahnbrs_"><img src="images/afifah.jpg"></a>
+            <p>Afifah Nibras</p>
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <p>©2023JunkExchange</p>
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="css/about.css">
 @endsection
