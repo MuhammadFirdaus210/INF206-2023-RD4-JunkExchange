@@ -8,9 +8,9 @@
         <li class="nav-item">
             <a class="nav-link fs-30 text-white" href="/about">Tentang Kami</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link fs-30 text-white" href="/contact">Hubungi Kami</a>
-        </li>
+        </li> -->
     </ul>
 
     <ul class="nav ms-auto">
