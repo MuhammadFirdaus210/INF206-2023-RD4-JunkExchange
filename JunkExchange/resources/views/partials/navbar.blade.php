@@ -5,8 +5,8 @@
                 <i class="bi bi-house-door-fill fs-5"></i>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link fs-30 text-white" href="/about">Tentang Kami</a>
+        <li class="nav-item" style="padding-top : 3px">
+            <a class="nav-link fs-30 text-white" href="/about" style="paddin">Tentang Kami</a>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link fs-30 text-white" href="/contact">Hubungi Kami</a>
