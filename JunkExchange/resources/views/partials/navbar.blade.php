@@ -1,24 +1,27 @@
-<nav class="nav px-2 py-2 shadow sticky-top" style="background-color: #2aba86">
+<nav class="nav px-2 py-1 shadow sticky-top" style="background-color: #2aba86">
     <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link fs-30 text-white" href="/">
-                <i class="bi bi-house-door-fill fs-5"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link fs-30 text-white" href="/about">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link fs-30 text-white" href="/contact">Hubungi Kami</a>
-        </li>
+        <div>
+            <li class="nav-item">
+                <a class="nav-link fs-30 text-white" href="/">
+                    <i class="bi bi-house-door-fill fs-5 py-1"></i>
+                </a>
+            </li>
+        </div>
+        <div class="d-flex" style="padding-top: 3px">
+            <li class="nav-item">
+                <a class="nav-link fs-30 text-white" href="/about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-30 text-white" href="/contact">Hubungi Kami</a>
+            </li>
+        </div>
     </ul>
 
     <ul class="nav ms-auto">
         @auth
-
         <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
-            <i class="bi bi-people-fill fs-5 text-white "></i>
+            <i class="bi bi-people-fill fs-5 text-white py-0"></i>
         </button>
 
         <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasExample"

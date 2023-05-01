@@ -43,7 +43,7 @@
                     <tr>
                         <th>#</th>
                         <th>Nama Barang</th>
-                        <th>Deskripsi</th>
+                        <th>Kategori</th>
                         <th>Berat</th>
                         <th>Gambar</th>
                     </tr>
@@ -53,7 +53,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->name }}</td>
-                        <td>{{ $item->description }}</td>
+                        <td>{{ $item->category }}</td>
                         <td>{{ $item->weight }}</td>
                         <td>
                             <img

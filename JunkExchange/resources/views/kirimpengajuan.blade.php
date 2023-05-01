@@ -17,7 +17,7 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br><br>
     <div class="footer">
-        <p>Kembali ke Halaman Awal? <a href="/home">klik disini </a></p>
+        <p>Kembali ke Halaman Awal? <a href="/">klik disini </a></p>
     </div>
 </div>
 <link rel="stylesheet" href="css/kirimpengajuan.css">
