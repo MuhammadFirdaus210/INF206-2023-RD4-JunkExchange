@@ -5,20 +5,23 @@
 @include('partials.hypernav')
 
 <div class="main mt-5">
+    <div class="header">
         <h1>Selamat Form Pengajuan Sudah Terkirim</h1>
-        <h3>Silahkan Menunggu Pesan Balasan Untuk Step Selanjutnya</h3>
+        <h5>Silahkan Menunggu Pesan Balasan Untuk Step Selanjutnya</h5>
+    </div>
 
-        <div class="shape">
-            <div class="lingkaran1"></div>
-            <div class="garis"></div>
-            <div class="lingkaran2"></div>
-            <div class="lingkaran3"></div>
-        </div>
+    <div class="shape d-flex justify-content-center">
+        <div class="lingkaran"></div>
+        <div class="garis"></div>
+        <div class="lingkaran"></div>
+        <div class="garis"></div>
+        <div class="lingkaran"></div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br>
+
     <div class="footer">
-        <p>Kembali ke Halaman Awal? <a href="/home">klik disini </a></p>
+        <h6>Kembali ke Halaman Awal? <a href="/home">klik disini </a></h6>
     </div>
+
 </div>
 <link rel="stylesheet" href="css/kirimpengajuan.css">
 @endsection

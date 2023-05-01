@@ -19,15 +19,14 @@
     justify-content: center;
   }
 
-  h6 {
+  .tilt {
     display: inline-block;
     color: #969696;
-    padding: 50px 150px;
+    padding: 50px 0;
   }
   
-  a {
-    color: #2cb67d;
-    text-decoration: none;
+  .tilt h6 {
+    padding: 10px 0;
   }
 
   .row {

@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('Datas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description')->nullable();
+            $table->string('category')->nullable();
             $table->string('weight');
             $table->string('photo', 300);
             $table->timestamps();
