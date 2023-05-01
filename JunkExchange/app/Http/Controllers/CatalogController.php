@@ -22,14 +22,5 @@ class CatalogController extends Controller
             "singleItem" => $blog_posts
         ])->with('datas', $datas);
     }
- 
- 
-    public function store(Request $request)
-    {
-        $requestData = $request->all();
-        $fileName = time().$request->file('photo')->getClientOriginalName();
-        $path = $request->file('photo')->storeAs('images', $fileName, 'public');
-        $requestData["photo"] = $path;
-        Datas::create($requestData);
-        return redirect('datas')->with('flash_message', 'data Added!');}
+
 }
