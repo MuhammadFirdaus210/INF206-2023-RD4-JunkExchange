@@ -24,9 +24,6 @@
                     <div class="d-flex justify-content-between">
                         <span>Berat</span><span>{{ $item->weight }}</span>
                     </div>
-                    {{-- <div class="d-flex justify-content-between">
-                        <span>Model</span><span>{{ $item->description }}</span>
-                    </div> --}}
                     <div class="mt-4">
                         <h5>Barang untuk ditukarkan</h5>
                     </div>
