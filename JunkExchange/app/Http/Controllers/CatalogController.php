@@ -10,17 +10,17 @@ class CatalogController extends Controller
 
 
 
-    public function index() 
-    {
-        $blog_posts = [
-                "title" => "pertama",
-                "slug" => "item-pertama"
-        ];
+    public function index()
+    {   
 
-        $datas = Datas::all();
-        return view ('catalog', [
-            "singleItem" => $blog_posts
-        ])->with('datas', $datas);
+        if(request('search')) {
+            $datas = Datas::where('name', 'LIKE', '%' .request('search'). '%')->get();
+        }
+        else {
+            $datas = Datas::all();
+        }
+        return view ('catalog')->with('datas', $datas);
+
     }
 
 }

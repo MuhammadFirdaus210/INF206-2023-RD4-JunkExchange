@@ -15,10 +15,19 @@
     
         </div>
 
-        <div class="search-section">
+        {{-- <div class="search-section">
             <form action="" class="search-bar">
                 <input type="text" id="search-column" placeholder="Temukan disini" />
                 <button>Cari</button>
+            </form>
+        </div> --}}
+
+        <div class="row justify-content-center">
+            <form action="{{url('/catalog')}}">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control shadow" placeholder="Temukan disini" name="search">
+                    <button class="btn text-white shadow" type="submit" style="background-color: #2ABA86">Cari</button>
+                </div>
             </form>
         </div>
 
