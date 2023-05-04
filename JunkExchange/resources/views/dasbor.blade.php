@@ -1,9 +1,9 @@
-@extends('layouts.main') 
+@extends('layouts.main')
 
 @section('container')
 
     @include('partials.hyperNav')
-    
+
     <div class="container-contain">
         <div class="sidebar">
             <div style="padding-left: 15px; padding-top: 15px">
@@ -37,18 +37,18 @@
                             <div class="img-text">
                                 <img src="images/upload.png" alt="" width="150" height="100" style="padding-left: 50px;" />
                                 <input class="" name="photo" type="file" id="photo"
-                                    style="padding-left: 10px; padding-top: 100px;"> </br>
+                                    style="padding-left: 10px; padding-top: 100px;"> <br>
                             </div>
                         </div>
-                        
+
                         <div style="padding-left: 40px;">
                             <div class="img-upload" style="height: 80%; ">
                                 <div style="padding-left: 20px; padding-top: 20px;">
 
                                     <label>Nama Barang</label> <br>
                                     <input type="text" name="name" id="name" class="form-control"><br>
-                                    <label>Deskripsi</label><br>
-                                    <input type="text" name="description" id="description" class="form-control"><br>
+                                    <label>Kategori</label><br>
+                                    <input type="text" name="category" id="category" class="form-control"><br>
                                     <label>Berat</label><br>
                                     <input type="text" name="weight" id="weight" class="form-control"><br>
                                 </div>
@@ -56,6 +56,45 @@
                             <div style="padding-top: 20px;">
                                 <input type="submit" value="Save" class="btn text-white"
                                     style="width: 295px; height: 50px; background-color: #2ABA86;"><br>
+                            </div>
+
+                        
+                        </div>
+                        <div style="padding-left: 140px;">
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
+                            </div>
+                            <div class="img-upload mb-3" style="height: 13%; ">
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
+                                <span class="border border-black"></span>
+                                <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
                             </div>
                         </div>
                     </form>

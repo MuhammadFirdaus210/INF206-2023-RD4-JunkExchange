@@ -28,22 +28,18 @@
     <div class="container">
         <div class="row">
             <div class="">
-                <a
-                    href="{{ url('/dasbor') }}"
-                    class="btn btn-success"
-                    title="Add New Contact"
-                >
+                <a href="{{ url('/dasbor') }}" class="btn text-white" title="Add New Contact" style="background-color: #2ABA86">
                     Add New Data
                 </a>
             </div>
         </div>
         <div style="padding-top: 10px">
-            <table class="table table-bordered table-striped" id="membersTable">
+            <table class="table table-bordered rounded table-striped" id="membersTable">
                 <thead>
                     <tr>
                         <th>#</th>
                         <th>Nama Barang</th>
-                        <th>Deskripsi</th>
+                        <th>Kategori</th>
                         <th>Berat</th>
                         <th>Gambar</th>
                     </tr>
@@ -53,7 +49,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->name }}</td>
-                        <td>{{ $item->description }}</td>
+                        <td>{{ $item->category }}</td>
                         <td>{{ $item->weight }}</td>
                         <td>
                             <img

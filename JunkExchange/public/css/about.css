@@ -6,11 +6,10 @@ body {
 .container-contain {
     padding: 20px;
     width: 60%;
-  }
+}
 
 .title {
     display: flex;
-
 }
 
 .hero img {
@@ -19,8 +18,7 @@ body {
 
 .paragraph1 {
     color: #2cb67d;
-    text-align: center;
-
+    text-align: justify;
 }
 
 .footer {
