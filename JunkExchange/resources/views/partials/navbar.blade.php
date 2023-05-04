@@ -15,6 +15,35 @@
 
     <ul class="nav ms-auto">
         @auth
+
+        <div class="dropdown">
+            <button class="btn" type="button" data-bs-toggle="dropdown" >
+                <i class="bi bi-bell-fill fs-5 text-white py-1"></i>
+            </button>
+            <ul class="dropdown-menu px-2 py-2 row gy-2" style="width: 300px">
+                <h5>Notification</h5>
+                <li class="list-group-item border rounded" >
+                    <div class="mx-1 p-1">
+                      <div class="fw-bold">Contributor1</div>
+                      Pengajuan pertukaran anda ditolak!
+                    </div>
+                  </li>
+                <li class="list-group-item border rounded" >
+                    <div class="mx-1 p-1">
+                      <div class="fw-bold">Contributor2</div>
+                      Pengajuan pertukaran anda diterima!
+                    </div>
+                  </li>
+                <li class="list-group-item border rounded" >
+                    <div class="mx-1 p-1">
+                      <div class="fw-bold">Contributor3</div>
+                      Pengajuan pertukaran anda diterima!
+                    </div>
+                  </li>
+    
+            </ul>
+        </div>
+
         <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
             <i class="bi bi-people-fill fs-5 text-white py-0"></i>

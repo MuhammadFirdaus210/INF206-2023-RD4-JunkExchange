@@ -8,10 +8,10 @@
         </div>
         <div class="tagline">
             <h6>Pertukaran Populer : </h6>
-                <a href="#">Vas Bunga</a>
-                <a href="#">Boneka</a>
-                <a href="#">Kotak</a>
-                <a href="#">Botol</a>
+                <a href="{{ url('/catalog?search=vas bunga') }}" class="text-decoration-none">Vas Bunga</a>
+                <a href="{{ url('/catalog?search=boneka') }}" class="text-decoration-none">Boneka</a>
+                <a href="{{ url('/catalog?search=kotak') }}" class="text-decoration-none">Kotak</a>
+                <a href="{{ url('/catalog?search=botol') }}" class="text-decoration-none">Botol</a>
     
         </div>
 
@@ -38,20 +38,21 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="card shadow" style="background-color: #2ABA86;">
-                    <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
+                    <img src="/images/vasbunga.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
-                        <a class="text-white text-decoration-none" href="/catalog">Vas Bunga</a>
+                        <a href="{{ url('/catalog?search=vas bunga') }}" class="text-white text-decoration-none">Vas Bunga</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card shadow" style="background-color: #2ABA86;">
-                    <img src="/images/exmple.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
+                    <img src="/images/boneka.jpg" style="width: 100%; height: 120px; border-radius: 5px; object-fit: cover;">
                     <div class="card-body p-1 px-3">
-                        <a  class="text-white text-decoration-none" href="/catalog">Vas Bunga</a>
+                        <a href="{{ url('/catalog?search=boneka') }}" class="text-white text-decoration-none">Boneka</a>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 

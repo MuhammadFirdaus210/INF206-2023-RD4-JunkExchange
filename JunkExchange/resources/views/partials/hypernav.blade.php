@@ -1,19 +1,12 @@
 <div class="hyperNav">
-    <a href="">
-        Keranjang
-    </a>
-    <a href="">
-        Kotak
-    </a>
-    <a href="">
-        Vas Bunga
-    </a>
-    <a href="">
-        Boneka</a>
-    <a href="">
-        Bunga
-    </a>
-    <a href="">
-        Mainan
-    </a>
+    <a href="{{ url('/catalog?search=keranjang') }}" class="text-decoration-none">Keranjang</a>
+
+
+    <a href="{{ url('/catalog?search=kotak') }}" class="text-decoration-none">Kotak</a>
+    <a href="{{ url('/catalog?search=vas bunga') }}" class="text-decoration-none">Vas Bunga</a>
+    <a href="{{ url('/catalog?search=boneka') }}" class="text-decoration-none">Boneka</a>
+    <a href="{{ url('/catalog?search=bunga') }}" class="text-decoration-none">Bunga</a>
+    <a href="{{ url('/catalog?search=mainan') }}" class="text-decoration-none">Mainan</a>
+
+
 </div>
