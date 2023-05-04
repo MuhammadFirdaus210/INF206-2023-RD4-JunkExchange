@@ -42,11 +42,15 @@ Route::get('/kirimpengajuan', function () {
     return view('kirimpengajuan');
 });
 
+
 Route::get('/product/{id}', [ProductController::class, 'index']);
+
 
 Route::resource("/catalog", CatalogController::class)->middleware('auth');
 
+
 Route::resource("/datas", DataController::class)->middleware('auth');
+
 
 route::get('/login', [LoginController::class, 'create'])->name('login')->middleware('guest');
 route::post('/login', [LoginController::class, 'authenticate']);
@@ -55,6 +59,3 @@ route::post('/logout', [LoginController::class, 'logout']);
 
 route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 route::post('/register', [RegisterController::class, 'store']);
-
-// Route::post('/image/create', 'ImageController@create')->name('image.create');
-// Route::get('/image', 'ImageController@index')->name('image.index');

@@ -29,6 +29,10 @@
     padding: 10px 0;
   }
 
+  .tilt a {
+    color: #2cb67d;
+    text-decoration: none;
+  }
   .row {
     padding: 30px 100px;
   }
