@@ -12,15 +12,9 @@ class CatalogController extends Controller
 
     public function index() 
     {
-        $blog_posts = [
-                "title" => "pertama",
-                "slug" => "item-pertama"
-        ];
 
         $datas = Datas::all();
-        return view ('catalog', [
-            "singleItem" => $blog_posts
-        ])->with('datas', $datas);
+        return view ('catalog')->with('datas', $datas);
     }
 
 }
