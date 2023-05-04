@@ -10,11 +10,17 @@ class CatalogController extends Controller
 
 
 
-    public function index() 
-    {
+    public function index()
+    {   
 
-        $datas = Datas::all();
+        if(request('search')) {
+            $datas = Datas::where('name', 'LIKE', '%' .request('search'). '%')->get();
+        }
+        else {
+            $datas = Datas::all();
+        }
         return view ('catalog')->with('datas', $datas);
+
     }
 
 }
