@@ -1,0 +1,54 @@
+body {
+    background-image: url("/images/background.jpg");
+    background-size: 100%;
+}
+
+.container-contain {
+    padding: 20px;
+    width: 60%;
+}
+
+.title {
+    display: flex;
+}
+
+.hero img {
+    width: 225px;
+}
+
+.paragraph1 {
+    color: #2cb67d;
+    text-align: justify;
+}
+
+.footer {
+    color: black;
+    text-align: center;
+}
+
+.row {
+    padding: 0 105px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon div {
+    padding: 15px;
+    justify-content: center;
+}
+
+.icon img {
+    width: 95px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.icon p {
+    padding-top: 5px;
+    font-size: 10px;
+    text-align: center;
+}
