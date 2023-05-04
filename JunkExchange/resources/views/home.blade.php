@@ -15,12 +15,17 @@
     
         </div>
 
-        <div class="search-section">
+        {{-- <div class="search-section">
             <form action="" class="search-bar">
                 <input type="text" id="search-column" placeholder="Temukan disini" />
                 <button>Cari</button>
             </form>
-        </div>
+        </div> --}}
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control shadow" placeholder="Temukan disini" aria-label="Temukan disini" aria-describedby="button-addon2">
+            <button class="btn text-white shadow" type="submit" id="button-addon2" style="background-color: #2ABA86">Button</button>
+          </div>
 
         <div class="titl">
             <h6>Ketegori teratas : </h6>
