@@ -24,20 +24,20 @@
                 <h5>Notification</h5>
                 <li class="list-group-item border rounded" >
                     <div class="mx-1 p-1">
-                      <div class="fw-bold">Asep Hermawawwawaw</div>
-                      vas bunga meriah sekali banyak kali
+                      <div class="fw-bold">Contributor1</div>
+                      Pengajuan pertukaran anda ditolak!
                     </div>
                   </li>
                 <li class="list-group-item border rounded" >
                     <div class="mx-1 p-1">
-                      <div class="fw-bold">Asep Hermawawwawaw</div>
-                      vas bunga meriah sekali banyak kali
+                      <div class="fw-bold">Contributor2</div>
+                      Pengajuan pertukaran anda diterima!
                     </div>
                   </li>
                 <li class="list-group-item border rounded" >
                     <div class="mx-1 p-1">
-                      <div class="fw-bold">Asep Hermawawwawaw</div>
-                      vas bunga meriah sekali banyak kali
+                      <div class="fw-bold">Contributor3</div>
+                      Pengajuan pertukaran anda diterima!
                     </div>
                   </li>
     
