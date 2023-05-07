@@ -15,7 +15,6 @@
 
     <ul class="nav ms-auto">
         @auth
-
         <div class="dropdown">
             <button class="btn" type="button" data-bs-toggle="dropdown" >
                 <i class="bi bi-bell-fill fs-5 text-white py-1"></i>
@@ -92,11 +91,11 @@
             </div>
 
             @else
-            <li class="nav-item">
+            <li class="nav-item pt-1">
                 <a class="nav-link mx-2 py-1 fs-30 bg-white border border-white border-2 rounded" style="color: #2aba86"
                     href="/login">Masuk</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pt-1">
                 <a class="nav-link mx-2 py-1 fs-30 text-white border border-white border-2 rounded"
                     href="/register">Daftar</a>
             </li>
