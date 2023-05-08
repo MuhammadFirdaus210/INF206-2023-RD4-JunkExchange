@@ -54,9 +54,9 @@
                         <td>
                             <img
                                 src="{{ asset('storage/'.$item->photo) }}"
-                                width="60"
+                                width="100"
                                 height="60"
-                                class="img img-responsive"
+                                class="img img-responsive object-fit-cover"
                             />
                         </td>
                     </tr>
