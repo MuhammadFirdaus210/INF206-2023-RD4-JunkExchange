@@ -43,7 +43,7 @@
 
                         <div style="padding-left: 40px;">
                             <div class="img-upload" style="height: 80%; ">
-                                <div style="padding-left: 20px; padding-top: 20px;">
+                                <div style="padding-left: 20px; padding-top: 25px; padding-bottom: 40px;">
 
                                     <label>Nama Barang</label> <br>
                                     <input type="text" name="name" id="name" class="form-control"><br>
@@ -51,6 +51,8 @@
                                     <input type="text" name="category" id="category" class="form-control"><br>
                                     <label>Berat</label><br>
                                     <input type="text" name="weight" id="weight" class="form-control"><br>
+                                    <label>Nomor Hp (+62) + (number)</label><br>
+                                    <input type="number" name="number" id="number" class="form-control"><br>
                                 </div>
                             </div>
                             <div style="padding-top: 20px;">
