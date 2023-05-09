@@ -14,6 +14,7 @@ return new class extends Migration
             $table->string('category')->nullable();
             $table->string('weight');
             $table->string('photo', 300);
+            $table->string('number', 13);
             $table->timestamps();
         });
     }
