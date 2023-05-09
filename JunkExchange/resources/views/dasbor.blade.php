@@ -7,7 +7,7 @@ JunkExchange | Dashboard
 @include('partials.hyperNav')
 
 <div class="container-contain">
-    <div class="sidebar">
+    <div class="sidebar" style="height: 100vh">
         <div style="padding-left: 15px; padding-top: 15px">
             <a href="/dasbor">
                 <img src="images/shop.png" alt="" width="25" height="25" />
