@@ -1,7 +1,9 @@
 {{-- @dd($datas) --}}
 
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | Catalog
+@endsection
 @section('container')
 
 @include('partials.hypernav')

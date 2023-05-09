@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | About
+@endsection
 @section('container')
 
 
