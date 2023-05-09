@@ -55,7 +55,8 @@
                 <img src="{{ asset('storage/'.$item->photo) }}"
                     style="width: 100%; height: 150px; border-radius: 5px; object-fit: cover;">
                 <div class="card-body p-1 px-3">
-                    <a class="text-white text-decoration-none" href="/product/{{ $item->id }}">{{ $item->name }}</a>
+                    <a class="text-white text-decoration-none"
+                        href="/product/detail/{{ $item->id }}">{{ $item->name }}</a>
                 </div>
             </div>
         </div>
