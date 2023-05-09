@@ -23,7 +23,8 @@ class DatasFactory extends Factory
             'name' => 'Vas bunga blue ccurrm',
             'category' => 'Vas Bunga',
             'weight' => '2KG',
-            'photo' => '/images/product1.jpg'
+            'photo' => '/images/product1.jpg',
+            'number' =>'085257072677'
         ];
     }
 }
