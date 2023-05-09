@@ -65,18 +65,4 @@
 .img-upload label {
     color: #2aba86;
 }
-/* Style untuk container gambar
-#gambar-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-Style untuk gambar
-.gambar-item {
-    flex-basis: 200px;
-    margin: 10px;
-}
-.gambar-item img {
-    width: 100%;
-    height: auto;
-} */

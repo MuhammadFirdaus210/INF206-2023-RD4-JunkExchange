@@ -56,3 +56,8 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .karosel {
+    width: 92%;
+    padding-left: 100px;
+  }
