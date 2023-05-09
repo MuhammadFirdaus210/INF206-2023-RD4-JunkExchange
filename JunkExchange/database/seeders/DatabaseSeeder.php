@@ -23,19 +23,23 @@ class DatabaseSeeder extends Seeder
         Datas::factory(9)->create();
         Datas::factory(9)->create([
             'name' => 'Boneka doraemon',
-            'category' => 'Boneka'
+            'category' => 'Boneka',
+            'photo' => '/images/bonekadoraemon.jpg'
         ]);
         Datas::factory(9)->create([
             'name' => 'Mainan Robot-robotan',
-            'category' => 'Mainan'
+            'category' => 'Mainan',
+            'photo' => '/images/mainan.jpg'
         ]);
         Datas::factory(9)->create([
             'name' => 'Keranjang pakaian',
-            'category' => 'Keranjang'
+            'category' => 'Keranjang',
+            'photo' => '/images/keranjangpakaian.png'
         ]);
         Datas::factory(9)->create([
             'name' => 'Kotak kardus',
-            'category' => 'Kotak'
+            'category' => 'Kotak',
+            'photo' => '/images/kardus.jpg'
         ]);
 
         
