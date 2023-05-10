@@ -4,7 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 use App\Models\Datas;
+use App\Models\Notification;
 
 class DatabaseSeeder extends Seeder
 {   
@@ -15,10 +17,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' => '12345678'
+        ]);
 
         Datas::factory(9)->create();
         Datas::factory(9)->create([
@@ -41,7 +44,5 @@ class DatabaseSeeder extends Seeder
             'category' => 'Kotak',
             'photo' => '/images/kardus.jpg'
         ]);
-
-        
     }
 }
