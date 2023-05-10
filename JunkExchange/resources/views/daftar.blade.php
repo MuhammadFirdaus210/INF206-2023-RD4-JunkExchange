@@ -1,4 +1,8 @@
-@extends('layouts.main') @section('container')
+@extends('layouts.main')
+@section('title')
+JunkExchange | Dashboard
+@endsection
+@section('container')
 
 <div class="container-contain">
     <div class="sidebar">

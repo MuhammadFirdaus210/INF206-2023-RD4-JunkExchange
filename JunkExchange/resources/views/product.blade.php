@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | Product
+@endsection
 @section('container')
 
 @include('partials.hypernav')
@@ -50,30 +52,35 @@
                             </div>
 
                             <!-- form -->
-                            <form>
+                            <form action="{{ url('/product/store') }}" method="post" enctype="multipart/form-data">
+                                {!! csrf_field() !!}
                                 <div class="mx-auto p-3">
                                     <label for="barang" class="form-label">Nama Barang</label>
-                                    <input type="namabarang" class="form-control" id="exampleInputnamabarang">
+                                    <input type="text" name="name" id="name" class="form-control" >
                                 </div>
                                 <div class="mx-auto p-3">
                                     <label for="exampleInputkategori" class="form-label">Kategori</label>
-                                    <input type="kategori" class="form-control" id="exampleInputkategori">
+                                    <input type="text" name="category" id="category" class="form-control" >
                                 </div>
                                 <div class="mx-auto p-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    
+                                    <textarea type="text" name="description" id="description" class="form-control" rows="3"></textarea>
                                 </div>
                                 <div class="mx-auto p-3">
                                     <label for="formFile" class="form-label">Tambah Gambar</label>
-                                    <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
+                                   
+                                    <input class="" name="photo" type="file" id="photo"
+                                    style="padding-left: 10px; padding-top: 100px; color: #2ABA86">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Kembali</button>
-                                    <button type="button" class="btn text-white"
+                                    <button type="submit" class="btn text-white"
                                         style="background-color: #2ABA86">Simpan</button>
                                 </div>
+                            </form>
                         </div>
                     </div>
                 </div>
