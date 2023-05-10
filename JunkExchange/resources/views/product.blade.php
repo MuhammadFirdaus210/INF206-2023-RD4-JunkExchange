@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | Product
+@endsection
 @section('container')
 
 @include('partials.hypernav')

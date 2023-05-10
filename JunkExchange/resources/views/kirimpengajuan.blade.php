@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | Kirim
+@endsection
 @section('container')
 
 @include('partials.hypernav')
