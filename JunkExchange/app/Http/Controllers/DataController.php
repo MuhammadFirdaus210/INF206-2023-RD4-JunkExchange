@@ -28,8 +28,9 @@ class DataController extends Controller
     {   
         $user = Auth::user();
         $userTarget = User::find($id);
+        $contact = Datas::find($user->id);
         $message = 'Approved';
-        Notification::send($userTarget, new globalNotify($message));
+        Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('dasbor');  
     }
     

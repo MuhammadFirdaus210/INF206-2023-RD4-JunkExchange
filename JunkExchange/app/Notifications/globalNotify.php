@@ -14,9 +14,10 @@ class globalNotify extends Notification
     /**
      * Create a new notification instance.
      */
-    public function __construct($message)
+    public function __construct($message, $contact)
     {
         $this->message = $message;
+        $this->contact = $contact;
     }
 
     /**
@@ -51,6 +52,7 @@ class globalNotify extends Notification
             'itemName' => null,
             'userId' => null,
             'message' => $this->message,
+            'contact' => $this->contact,
         ];
     }
 }

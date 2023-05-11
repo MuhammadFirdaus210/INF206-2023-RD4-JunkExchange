@@ -51,7 +51,8 @@ class exchangeNotif extends Notification
         return [
             'itemName' => $this->itemName,
             'userId' => $this->userId,
-            'message' => null
+            'message' => null,
+            'contact' => null,
         ];
     }
 }

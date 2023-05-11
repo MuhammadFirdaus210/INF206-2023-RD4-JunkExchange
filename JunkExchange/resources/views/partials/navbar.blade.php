@@ -31,8 +31,14 @@
                 @if ($notification->data['message'])
                 <li class="list-group-item border rounded">
                     <div class="mx-1 p-1 text-secondary">
-                      <div class="fw-bold" style="color: #2aba86">Contributor1</div>
+                      <div class="fw-bold" style="color: #2aba86">Hubungi : {{ $notification->data['contact'] }}</div>
                       Pengajuan anda {{ $notification->data['message'] }}
+                    </div>
+                </li>
+                @elseif($notification === null)
+                <li class="list-group-item border rounded" >
+                    <div class="mx-1 p-1">
+                      Belum ada notifikasi nih!!
                     </div>
                 </li>
                 @else
