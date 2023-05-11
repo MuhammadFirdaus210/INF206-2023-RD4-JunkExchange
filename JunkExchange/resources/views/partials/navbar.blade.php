@@ -32,7 +32,8 @@
                 <li class="list-group-item border rounded">
                     <div class="mx-1 p-1 text-secondary">
                       <div class="fw-bold" style="color: #2aba86">Hubungi : {{ $notification->data['contact'] }}</div>
-                      Pengajuan anda {{ $notification->data['message'] }}
+                        <a class="text-decoration-none" href="https://wa.me/{{ $notification->data['contact'] }} " style="color: #2aba86">Klik disini</a>
+                      | Pengajuan anda {{ $notification->data['message'] }}
                     </div>
                 </li>
                 @elseif($notification === null)

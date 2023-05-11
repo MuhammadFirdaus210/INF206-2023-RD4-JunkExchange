@@ -24,7 +24,7 @@ class DatasFactory extends Factory
             'category' => 'Vas Bunga',
             'weight' => '2KG',
             'photo' => '/images/product1.jpg',
-            'number' => '085257072677',
+            'number' => '6285257072677',
             'user_id' => 1
         ];
     }
