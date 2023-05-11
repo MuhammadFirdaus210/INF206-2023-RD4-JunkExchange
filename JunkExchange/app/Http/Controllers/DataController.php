@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
+use illuminate\Support\Facades\Auth;
+use App\Models\User;
 use App\Models\Datas;
 
 
@@ -14,9 +16,10 @@ class DataController extends Controller
         return view ('daftar')->with('datas', $datas);
     }
  
-    public function create()
-    {
-        return view('dasbor');
+    public function dash()
+    {   
+        $user = Auth::user();
+        return view('dasbor')->with('user', $user);
     }
  
     public function store(Request $request)
