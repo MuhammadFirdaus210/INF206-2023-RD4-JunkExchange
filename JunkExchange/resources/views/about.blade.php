@@ -16,10 +16,9 @@ JunkExchange | About
         <div class="paragraph1">
             <h2>Junk Exchange</h2>
             <p><em>Tukar sampahmu dengan manfaat yang lebih besar</em></p>
-            <p>Junk Exchange adalah sebuah aplikasi pertukaran sampah yang bertujuan untuk<br>memudahkan masyarakat
-                dalam mengelola sampah mereka dengan lebih efektif. Kami<br>percaya bahwa sampah bukanlah masalah,
-                melainkan sebuah sumber daya
-                yang dapat<br>dimanfaatkan dan didaur ulang menjadi produk yang lebih berguna.</p>
+            <p>Junk Exchange adalah sebuah aplikasi pertukaran sampah yang bertujuan untuk memudahkan masyarakat
+                dalam mengelola sampah mereka dengan lebih efektif. Kami percaya bahwa sampah bukanlah masalah,
+                melainkan sebuah sumber daya yang dapat dimanfaatkan dan didaur ulang menjadi produk yang lebih berguna.</p>
         </div>
 
     </div>
