@@ -2,8 +2,10 @@
  
 namespace App\Http\Controllers;
  
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Http\Request;
 use illuminate\Support\Facades\Auth;
+use App\Notifications\globalNotify;
 use App\Models\User;
 use App\Models\Datas;
 
@@ -21,7 +23,26 @@ class DataController extends Controller
         $user = Auth::user();
         return view('dasbor')->with('user', $user);
     }
- 
+
+    public function approval($id)
+    {   
+        $user = Auth::user();
+        $userTarget = User::find($id);
+        $contact = Datas::find($user->id);
+        $message = 'Approved';
+        Notification::send($userTarget, new globalNotify($message, $contact->number));
+        return redirect('dasbor');  
+    }
+    
+    public function rejected($id)
+    {   
+        $user = Auth::user();
+        $userTarget = User::find($id);
+        $message = 'Rejected';
+        Notification::send($userTarget, new globalNotify($message));
+        return redirect('dasbor');  
+    }
+
     public function store(Request $request)
     {
         // $requestData->user_id = auth()->user()->id;
