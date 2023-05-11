@@ -1,5 +1,5 @@
 
-@php( $username = \Illuminate\Support\Facades\Auth::user()) 
+@php( $user = \Illuminate\Support\Facades\Auth::user()) 
 
 <nav class="nav px-2 py-1 shadow sticky-top" style="background-color: #2aba86">
     <ul class="nav">
@@ -27,25 +27,28 @@
             </button>
             <ul class="dropdown-menu px-2 py-2 row gy-2 shadow" style="width: 300px; border-color: #2aba86; transition: .5s;">
                 <h5 class="fw-bold" style="color: #2aba86">Notification</h5>
+                @foreach ($user->notifications as $notification)
+                @if ($notification->data['message'])
                 <li class="list-group-item border rounded">
                     <div class="mx-1 p-1 text-secondary">
-                      <div class="fw-bold" style="color: #2aba86">Contributor1</div>
-                      Pengajuan pertukaran anda ditolak!
+                      <div class="fw-bold" style="color: #2aba86">Hubungi : {{ $notification->data['contact'] }}</div>
+                      Pengajuan anda {{ $notification->data['message'] }}
                     </div>
-                  </li>
+                </li>
+                @elseif($notification === null)
                 <li class="list-group-item border rounded" >
                     <div class="mx-1 p-1">
-                      <div class="fw-bold">Contributor2</div>
-                      Pengajuan pertukaran anda diterima!
+                      Belum ada notifikasi nih!!
                     </div>
-                  </li>
+                </li>
+                @else
                 <li class="list-group-item border rounded" >
                     <div class="mx-1 p-1">
-                      <div class="fw-bold">Contributor3</div>
-                      Pengajuan pertukaran anda diterima!
+                      Belum ada notifikasi nih!!
                     </div>
-                  </li>
-    
+                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
 
@@ -59,7 +62,7 @@
             <div class="offcanvas-header pb-0">
                 <a href="/" class="d-flex align-items-center gap-3 text-decoration-none" style="color: #2aba86">
                     <i class="bi bi-people-fill fs-3"></i>
-                    <span class="fs-4">{{ $username->name }}</span>
+                    <span class="fs-4">{{ $user->name }}</span>
                 </a>
                 <button type="button" class="btn-close" style="color: #2aba86" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
