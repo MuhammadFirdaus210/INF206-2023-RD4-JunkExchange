@@ -61,5 +61,5 @@ JunkExchange | Home
 </div>
 
 <link rel="stylesheet" href="css/home.css">
-@include('partials.footer')
+<!-- @include('partials.footer') -->
 @endsection
