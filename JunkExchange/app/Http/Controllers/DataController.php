@@ -31,7 +31,7 @@ class DataController extends Controller
         $contact = Datas::find($user->id);
         $message = 'Approved';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
-        return redirect('dasbor');  
+        return redirect('home');  
     }
     
     public function rejected($id)
@@ -40,7 +40,7 @@ class DataController extends Controller
         $userTarget = User::find($id);
         $message = 'Rejected';
         Notification::send($userTarget, new globalNotify($message));
-        return redirect('dasbor');  
+        return redirect('home');  
     }
 
     public function store(Request $request)
