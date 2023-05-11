@@ -64,39 +64,42 @@ JunkExchange | Dashboard
                 </div>
             </form>
 
-                <div class="col" style="padding-left: 20px;">
-                    @foreach ($user->notifications as $notification)
-                    @if ($notification->data['itemName'])
-                    <div class="card mb-3">
-                        <div class="card-body">
-                          <p class="card-text mx-1">Ada Pertukaran diajukan pada {{ $notification->data['itemName'] }} nih.</p>
-                          <div class="d-flex gap-2">
-                              <form action="/dasbor/approve{{ $notification->data['userId'] }}">
-                                  <button type ="submit" class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
-                              </form>
-                              <form action="/dasbor/reject{{ $notification->data['userId'] }}">
-                                  <button type ="submit" class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i>Tolak</button>
-                              </form>
-                              <a href="/detailbarang">
-                                <button class="btn btn-primary ps-2"><i class="bi bi-book pe-2"></i>Detail</button>
-                            </a>
-                          </div>
+                <div class="card ms-5 shadow w-25">
+                    <h2 class="px-4" style="color:#2ABA86"> <p style="font-size: 30px; padding-top: 15px;">Notification</p> </h2>
+                    <div class="col" style="padding-left: 20px; ">
+                        @foreach ($user->notifications as $notification)
+                        @if ($notification->data['itemName'])
+                        <div class="card mb-3">
+                            <div class="card-body">
+                              <p class="card-text mx-1">Ada Pertukaran diajukan pada {{ $notification->data['itemName'] }} nih.</p>
+                              <div class="d-flex gap-2">
+                                  <form action="/dasbor/approve{{ $notification->data['userId'] }}">
+                                      <button type ="submit" class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
+                                  </form>
+                                  <form action="/dasbor/reject{{ $notification->data['userId'] }}">
+                                      <button type ="submit" class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i>Tolak</button>
+                                  </form>
+                                  <a href="/detailbarang">
+                                    <button class="btn btn-primary ps-2"><i class="bi bi-book pe-2"></i>Detail</button>
+                                </a>
+                              </div>
+                            </div>
                         </div>
+                        @elseif($notification === null)
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <p class="card-text mx-1">Belum ada notifikasi nih</p>
+                            </div>
+                        </div>
+                        @else
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <p class="card-text mx-1">Belum ada notifikasi nih</p>
+                            </div>
+                        </div> 
+                        @endif
+                        @endforeach
                     </div>
-                    @elseif($notification === null)
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <p class="card-text mx-1">Belum ada notifikasi nih</p>
-                        </div>
-                    </div>
-                    @else
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <p class="card-text mx-1">Belum ada notifikasi nih</p>
-                        </div>
-                    </div> 
-                    @endif
-                    @endforeach
                 </div>
             </div>
             <!-- end notification -->
