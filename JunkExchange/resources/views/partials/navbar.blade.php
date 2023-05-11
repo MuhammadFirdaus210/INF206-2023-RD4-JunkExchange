@@ -11,6 +11,9 @@
         <li class="nav-item" style="padding-top : 3px">
             <a class="nav-link fs-30 text-white" href="/about" style="paddin">Tentang Kami</a>
         </li>
+        <li class="nav-item" style="padding-top : 3px">
+            <a href="{{ url('/catalog?search=') }}" class="nav-link fs-30 text-white" style="paddin">Semua Produk</a>
+        </li>
         <!-- <li class="nav-item">
             <a class="nav-link fs-30 text-white" href="/contact">Hubungi Kami</a>
         </li> -->

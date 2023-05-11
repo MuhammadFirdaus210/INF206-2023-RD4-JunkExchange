@@ -75,6 +75,11 @@ JunkExchange | Dashboard
                                 nih.</p>
                             <button class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
                             <button class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i></i>Tolak</button>
+
+                            <a href="/detailbarang">
+                                <button class="btn btn-primary ps-2"><i class="bi bi-book pe-2"></i>Detail</button>
+                            </a>
+                            
                         </div>
                     </div>
                     @empty
