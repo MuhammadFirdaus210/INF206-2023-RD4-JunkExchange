@@ -29,7 +29,7 @@ class DataController extends Controller
         $user = Auth::user();
         $userTarget = User::find($id);
         $contact = Datas::find($user->id);
-        $message = 'Approved';
+        $message = 'Diterima';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('home');  
     }
@@ -38,7 +38,7 @@ class DataController extends Controller
     {   
         $user = Auth::user();
         $userTarget = User::find($id);
-        $message = 'Rejected';
+        $message = 'Ditolak';
         Notification::send($userTarget, new globalNotify($message));
         return redirect('home');  
     }
