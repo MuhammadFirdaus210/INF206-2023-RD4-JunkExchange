@@ -52,7 +52,7 @@ JunkExchange | Product
                             </div>
 
                             <!-- form -->
-                            <form action="{{ url('/product/store') }}" method="post" enctype="multipart/form-data">
+                            <form action="/product/detail/{{ $item->id }}/store" method="post" enctype="multipart/form-data">
                                 {!! csrf_field() !!}
                                 <div class="mx-auto p-3">
                                     <label for="barang" class="form-label">Nama Barang</label>
@@ -78,7 +78,7 @@ JunkExchange | Product
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Kembali</button>
                                     <button type="submit" class="btn text-white"
-                                        style="background-color: #2ABA86">Simpan</button>
+                                        style="background-color: #2ABA86">Ajukan</button>
                                 </div>
                             </form>
                         </div>
@@ -92,10 +92,10 @@ JunkExchange | Product
                         <label for="formFile" class="form-label">Tambah Gambar</label>
                         <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
                     </div> -->
-                <div class="d-grid gap-2">
+                {{-- <div class="d-grid gap-2">
                     <a class="btn text-white" href="/kirimpengajuan" type="submit"
                         style="background-color: #2ABA86">Ajukan</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
