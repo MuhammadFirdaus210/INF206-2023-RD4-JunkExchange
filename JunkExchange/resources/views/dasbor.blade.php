@@ -64,9 +64,9 @@ JunkExchange | Dashboard
                 </div>
             </form>
 
-                <div class="card ms-5 shadow">
+                <div class="card ms-5 shadow w-25">
                     <h2 class="px-4" style="color:#2ABA86"> <p style="font-size: 30px; padding-top: 15px;">Notification</p> </h2>
-                    <div class="col" style="padding-left: 20px; padding-right: 20px">
+                    <div class="col" style="padding-left: 20px; ">
                         @foreach ($user->notifications as $notification)
                         @if ($notification->data['itemName'])
                         <div class="card mb-3">
