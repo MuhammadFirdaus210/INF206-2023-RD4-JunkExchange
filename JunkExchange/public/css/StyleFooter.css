@@ -1,31 +1,29 @@
-*{
-    font-family: arial;
-    font-weight: normal;
-    text-decoration: none;
-  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-  .hyperNav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #2aba86;
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-  .hyperNav a {
-    color: #2aba86;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-decoration: none;
-} 
+body
 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: #2aba86;
+}
 
 footer
 
 {
     position: relative;
     width: 100%;
-    background-color: transparant;
+    background-color: #fff;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -54,7 +52,7 @@ footer .social_icons li a
 
 {
     font-size: 2em;
-    color: #2aba86;
+    color: #000;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5%;
