@@ -1,3 +1,6 @@
+
+@php( $username = \Illuminate\Support\Facades\Auth::user()) 
+
 <nav class="nav px-2 py-1 shadow sticky-top" style="background-color: #2aba86">
     <ul class="nav">
         <li class="nav-item">
@@ -53,7 +56,7 @@
             <div class="offcanvas-header pb-0">
                 <a href="/" class="d-flex align-items-center gap-3 text-decoration-none" style="color: #2aba86">
                     <i class="bi bi-people-fill fs-3"></i>
-                    <span class="fs-4">Pengguna</span>
+                    <span class="fs-4">{{ $username->name }}</span>
                 </a>
                 <button type="button" class="btn-close" style="color: #2aba86" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
