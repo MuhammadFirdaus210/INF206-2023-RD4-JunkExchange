@@ -31,6 +31,7 @@ JunkExchange | Product
                 <div class="mt-4">
                     <h5>Barang untuk ditukarkan</h5>
                 </div>
+
                 <!-- Button trigger modal -->
                 <div class="d-grid gap-2">
                     <button type="button" class="btn my-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
@@ -58,20 +59,32 @@ JunkExchange | Product
                                     <label for="barang" class="form-label">Nama Barang</label>
                                     <input type="text" name="name" id="name" class="form-control" >
                                 </div>
+                                
                                 <div class="mx-auto p-3">
                                     <label for="exampleInputkategori" class="form-label">Kategori</label>
                                     <input type="text" name="category" id="category" class="form-control" >
                                 </div>
+
+                                <div class="mx-auto p-3">
+                                    <label for="berat" class="form-label">Berat Barang</label>
+                                    <input type="text" name="weight" id="weight" class="form-control" >
+                                </div>
+
                                 <div class="mx-auto p-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
                                     
                                     <textarea type="text" name="description" id="description" class="form-control" rows="3"></textarea>
                                 </div>
+
                                 <div class="mx-auto p-3">
-                                    <label for="formFile" class="form-label">Tambah Gambar</label>
-                                   
+                                    <label>Nomor Hp (+62) + (number)</label><br>
+                                    <input type="number" name="number" id="number" class="form-control"><br>
+                                </div>
+                                
+                                <div class="mx-auto p-3">
+                                    <label for="formFile" class="form-label">Tambah Gambar</label><br>
                                     <input class="" name="photo" type="file" id="photo"
-                                    style="padding-left: 10px; padding-top: 100px; color: #2ABA86">
+                                    style="color: #2ABA86">
                                 </div>
 
                                 <div class="modal-footer">
@@ -84,6 +97,7 @@ JunkExchange | Product
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -92,6 +106,7 @@ JunkExchange | Product
                         <label for="formFile" class="form-label">Tambah Gambar</label>
                         <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
                     </div> -->
+                    
                 {{-- <div class="d-grid gap-2">
                     <a class="btn text-white" href="/kirimpengajuan" type="submit"
                         style="background-color: #2ABA86">Ajukan</a>
