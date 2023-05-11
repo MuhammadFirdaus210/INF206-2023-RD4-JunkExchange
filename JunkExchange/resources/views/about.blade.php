@@ -53,7 +53,7 @@ JunkExchange | About
     <!-- <div class="footer">
         <p>©2023JunkExchange</p>
     </div> -->
-    @include('partials.footer')
+
 </div>
 
 
