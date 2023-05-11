@@ -32,8 +32,7 @@ JunkExchange | Dashboard
             <h2 class="" style="color:#2ABA86"> <strong>Dashboard</strong> </h2>
         </div>
 
-        <div class="cards">
-            <div class="card-body">
+        <div class="cards d-flex">
                 <form action="{{ url('/datas') }}" method="post" enctype="multipart/form-data" style="display: flex;">
                     {!! csrf_field() !!}
                     <div class="img-upload">
@@ -44,7 +43,7 @@ JunkExchange | Dashboard
                         </div>
                     </div>
 
-                    <div style="padding-left: 40px;">
+                    <div style="padding-left: 20px;">
                         <div class="img-upload" style="height: 80%; ">
                             <div style="padding-left: 20px; padding-top: 25px; padding-bottom: 40px;">
 
@@ -62,48 +61,26 @@ JunkExchange | Dashboard
                             <input type="submit" value="Save" class="btn text-white"
                                 style="width: 295px; height: 50px; background-color: #2ABA86;"><br>
                         </div>
-
-
-                    </div>
-                    <div style="padding-left: 140px;">
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
-                        <div class="img-upload mb-3" style="height: 13%; ">
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-x-circle"></button>
-                            <span class="border border-black"></span>
-                            <button type="button" class="btn btn-secondary btn-sm bi bi-check-circle ms-1"></button>
-                        </div>
                     </div>
                 </form>
-            </div>
+
+                <div class="col" style="padding-left: 20px;">
+                    @forelse ($user->notifications as $notification)
+                    <div class="card mb-3">
+                        <div class="card-body">
+                          <p class="card-text mx-1">Ada Pertukaran diajukan pada {{ $notification->data['itemName'] }} nih.</p>
+                          <button class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
+                          <button class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i></i>Tolak</button>
+                        </div>
+                    </div>
+                    @empty
+                    <div class="card mb-3">
+                        <div class="card-body">
+                          <p class="card-text mx-1">Belum ada notifikasi nih</p>
+                        </div>
+                    </div>
+                    @endforelse
+                </div>
         </div>
     </main>
 </div>

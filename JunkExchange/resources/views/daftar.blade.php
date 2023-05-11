@@ -74,7 +74,4 @@ JunkExchange | Dashboard
     </main>
 </div>
 <link rel="stylesheet" href="css/contributor.css">
-
-
-
 @endsection
