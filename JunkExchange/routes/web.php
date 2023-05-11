@@ -34,6 +34,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/allProduct', function () {
+    return view('allProduct');
+});
+
 // Route::get('/dasbor', function () {
 //     return view('dasbor');
 // })->middleware('auth');
