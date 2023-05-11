@@ -24,11 +24,17 @@ class DataController extends Controller
  
     public function store(Request $request)
     {
-        $requestData = $request->all();
+        // $requestData->user_id = auth()->user()->id;
         $fileName = time().$request->file('photo')->getClientOriginalName();
         $path = $request->file('photo')->storeAs('images', $fileName, 'public');
-        $requestData["photo"] = $path;
-        Datas::create($requestData);
+        Datas::create([
+            'user_id' => auth()->user()->id,
+            'name' => $request->name,
+            'category' => $request->category,
+            'weight'=> $request->weight,
+            'photo' => $path,
+            'number' => $request->number
+        ]);
         return redirect('datas')->with('flash_message', 'data Added!');  
     }
 }
