@@ -34,9 +34,9 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/dasbor', function () {
-    return view('dasbor');
-})->middleware('auth');
+// Route::get('/dasbor', function () {
+//     return view('dasbor');
+// })->middleware('auth');
 
 Route::get('/kirimpengajuan', function () {
     return view('kirimpengajuan');
@@ -44,13 +44,15 @@ Route::get('/kirimpengajuan', function () {
 
 
 Route::get('/product/detail/{id}', [ProductController::class, 'index']);
-Route::post('/product/store', [ProductController::class, 'store']); 
+Route::post('/product/detail/{id}/store', [ProductController::class, 'store']); 
 
-Route::resource("/datas", DataController::class)->middleware('auth');
 Route::resource("/catalog", CatalogController::class)->middleware('auth');
 
 
 Route::resource("/datas", DataController::class)->middleware('auth');
+// Route::resource("/dasbor", DataController::class)->middleware('auth');
+Route::get("/dasbor", [DataController::class, 'dash'])->middleware('auth');
+
 
 
 route::get('/login', [LoginController::class, 'create'])->name('login')->middleware('guest');

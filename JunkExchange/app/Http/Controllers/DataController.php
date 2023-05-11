@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\Datas;
 
 
@@ -14,9 +15,10 @@ class DataController extends Controller
         return view ('daftar')->with('datas', $datas);
     }
  
-    public function create()
-    {
-        return view('dasbor');
+    public function dash()
+    {   
+        $user = User::find(1);
+        return view('dasbor')->with('user', $user);
     }
  
     public function store(Request $request)

@@ -7,16 +7,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class NotifContri extends Notification
+class exchangeNotif extends Notification
 {
     use Queueable;
 
     /**
      * Create a new notification instance.
      */
-    public function __construct($name)
+    public function __construct($itemName)
     {
-        $this->name = $name;
+        $this->itemName = $itemName;
     }
 
     /**
@@ -48,7 +48,7 @@ class NotifContri extends Notification
     public function toArray(object $notifiable): array
     {
         return [
-            'name' =>$this->name
+            'itemName' => $this->itemName
         ];
     }
 }
