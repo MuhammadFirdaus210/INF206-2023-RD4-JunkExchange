@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="/css/style.css">
 
 
-    <title>EXP</title>
+    <title>@yield('title')</title>
 
 </head>
 
 <body>
 
     @include('partials.navbar')
+
+    {{-- @forelse ($users->notifications as $notification)
+    <a class="dropdown-item">{{ $notification->data['name'] }}<\a>
+    @empty
+    <a class="dropdown-item">No Record Found<\a>
+    @endforelse --}}
 
     @yield('container')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

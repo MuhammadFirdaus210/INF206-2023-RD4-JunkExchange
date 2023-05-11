@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+JunkExchange | Product
+@endsection
 @section('container')
 
 @include('partials.hypernav')
@@ -29,6 +31,7 @@
                 <div class="mt-4">
                     <h5>Barang untuk ditukarkan</h5>
                 </div>
+
                 <!-- Button trigger modal -->
                 <div class="d-grid gap-2">
                     <button type="button" class="btn my-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
@@ -50,33 +53,51 @@
                             </div>
 
                             <!-- form -->
-                            <form>
+                            <form action="/product/detail/{{ $item->id }}/store" method="post" enctype="multipart/form-data">
+                                {!! csrf_field() !!}
                                 <div class="mx-auto p-3">
                                     <label for="barang" class="form-label">Nama Barang</label>
-                                    <input type="namabarang" class="form-control" id="exampleInputnamabarang">
+                                    <input type="text" name="name" id="name" class="form-control" >
                                 </div>
+                                
                                 <div class="mx-auto p-3">
                                     <label for="exampleInputkategori" class="form-label">Kategori</label>
-                                    <input type="kategori" class="form-control" id="exampleInputkategori">
+                                    <input type="text" name="category" id="category" class="form-control" >
                                 </div>
+
+                                <div class="mx-auto p-3">
+                                    <label for="berat" class="form-label">Berat Barang</label>
+                                    <input type="text" name="weight" id="weight" class="form-control" >
+                                </div>
+
                                 <div class="mx-auto p-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    
+                                    <textarea type="text" name="description" id="description" class="form-control" rows="3"></textarea>
                                 </div>
+
                                 <div class="mx-auto p-3">
-                                    <label for="formFile" class="form-label">Tambah Gambar</label>
-                                    <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
+                                    <label>Nomor Hp (+62) + (number)</label><br>
+                                    <input type="number" name="number" id="number" class="form-control"><br>
+                                </div>
+                                
+                                <div class="mx-auto p-3">
+                                    <label for="formFile" class="form-label">Tambah Gambar</label><br>
+                                    <input class="" name="photo" type="file" id="photo"
+                                    style="color: #2ABA86">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Kembali</button>
-                                    <button type="button" class="btn text-white"
-                                        style="background-color: #2ABA86">Simpan</button>
+                                    <button type="submit" class="btn text-white"
+                                        style="background-color: #2ABA86">Ajukan</button>
                                 </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -85,10 +106,11 @@
                         <label for="formFile" class="form-label">Tambah Gambar</label>
                         <input class="form-control" type="file" id="formFile" style="color: #2ABA86">
                     </div> -->
-                <div class="d-grid gap-2">
+                    
+                {{-- <div class="d-grid gap-2">
                     <a class="btn text-white" href="/kirimpengajuan" type="submit"
                         style="background-color: #2ABA86">Ajukan</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

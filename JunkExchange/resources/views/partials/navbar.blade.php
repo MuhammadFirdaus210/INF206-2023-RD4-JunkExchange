@@ -1,3 +1,6 @@
+
+@php( $username = \Illuminate\Support\Facades\Auth::user()) 
+
 <nav class="nav px-2 py-1 shadow sticky-top" style="background-color: #2aba86">
     <ul class="nav">
         <li class="nav-item">
@@ -19,11 +22,11 @@
             <button class="btn" type="button" data-bs-toggle="dropdown" >
                 <i class="bi bi-bell-fill fs-5 text-white py-1"></i>
             </button>
-            <ul class="dropdown-menu px-2 py-2 row gy-2" style="width: 300px">
-                <h5>Notification</h5>
-                <li class="list-group-item border rounded" >
-                    <div class="mx-1 p-1">
-                      <div class="fw-bold">Contributor1</div>
+            <ul class="dropdown-menu px-2 py-2 row gy-2 shadow" style="width: 300px; border-color: #2aba86; transition: .5s;">
+                <h5 class="fw-bold" style="color: #2aba86">Notification</h5>
+                <li class="list-group-item border rounded">
+                    <div class="mx-1 p-1 text-secondary">
+                      <div class="fw-bold" style="color: #2aba86">Contributor1</div>
                       Pengajuan pertukaran anda ditolak!
                     </div>
                   </li>
@@ -53,7 +56,7 @@
             <div class="offcanvas-header pb-0">
                 <a href="/" class="d-flex align-items-center gap-3 text-decoration-none" style="color: #2aba86">
                     <i class="bi bi-people-fill fs-3"></i>
-                    <span class="fs-4">Pengguna</span>
+                    <span class="fs-4">{{ $username->name }}</span>
                 </a>
                 <button type="button" class="btn-close" style="color: #2aba86" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
