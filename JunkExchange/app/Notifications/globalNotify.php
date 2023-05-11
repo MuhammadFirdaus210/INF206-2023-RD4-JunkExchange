@@ -7,17 +7,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class exchangeNotif extends Notification
+class globalNotify extends Notification
 {
     use Queueable;
 
     /**
      * Create a new notification instance.
      */
-    public function __construct($itemName, $userId)
+    public function __construct($message)
     {
-        $this->itemName = $itemName;
-        $this->userId = $userId;
+        $this->message = $message;
     }
 
     /**
@@ -49,9 +48,9 @@ class exchangeNotif extends Notification
     public function toArray(object $notifiable): array
     {
         return [
-            'itemName' => $this->itemName,
-            'userId' => $this->userId,
-            'message' => null
+            'itemName' => null,
+            'userId' => null,
+            'message' => $this->message,
         ];
     }
 }

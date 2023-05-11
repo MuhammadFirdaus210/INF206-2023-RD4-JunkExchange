@@ -22,16 +22,23 @@ class ProductController extends Controller
  
     public function store(Request $request, $id)
     {   
-        $requestData = $request->all();
         $fileName = time().$request->file('photo')->getClientOriginalName();
         $path = $request->file('photo')->storeAs('images', $fileName, 'public');
-        $requestData["photo"] = $path;
-        Product::create($requestData);
+        
         $item = Datas::find($id);
-        $users = User::find($item->user_id);
-        Notification::send($users, new exchangeNotif($item->name));
+        $userTarget = User::find($item->user_id);
+        $userAct = Auth::user();
+        Product::create([
+            'user_id' => auth()->user()->id,
+            'status' => null,
+            'name' => $request->name,
+            'weight'=> $request->weight,
+            'category' => $request->category,
+            'description' => $request->description,
+            'number' => $request->number,
+            'photo' => $path
+        ]);
+        Notification::send($userTarget, new exchangeNotif($item->name, $userAct->id));
         return redirect('kirimpengajuan');
     }
-
-
 }

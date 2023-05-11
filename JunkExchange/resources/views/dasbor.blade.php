@@ -65,21 +65,30 @@ JunkExchange | Dashboard
                 </form>
 
                 <div class="col" style="padding-left: 20px;">
-                    @forelse ($user->notifications as $notification)
+                    @foreach ($user->notifications as $notification)
+                    @if ($notification->data['itemName'])
                     <div class="card mb-3">
                         <div class="card-body">
                           <p class="card-text mx-1">Ada Pertukaran diajukan pada {{ $notification->data['itemName'] }} nih.</p>
-                          <button class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
-                          <button class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i></i>Tolak</button>
+                          <div class="d-flex gap-2">
+                              <form action="/dasbor/approve{{ $notification->data['userId'] }}">
+                                  <button type ="submit" class="btn btn-success ps-2"><i class="bi bi-check-lg pe-2"></i>Terima</button>
+                              </form>
+                              <form action="/dasbor/reject{{ $notification->data['userId'] }}">
+                                  <button type ="submit" class="btn btn-danger ps-2"><i class="bi bi-x-lg pe-2"></i>Tolak</button>
+                              </form>
+                          </div>
                         </div>
                     </div>
-                    @empty
+                    @else
                     <div class="card mb-3">
                         <div class="card-body">
                           <p class="card-text mx-1">Belum ada notifikasi nih</p>
                         </div>
                     </div>
-                    @endforelse
+                        
+                    @endif
+                    @endforeach
                 </div>
         </div>
     </main>

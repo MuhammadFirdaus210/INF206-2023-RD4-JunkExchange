@@ -52,6 +52,9 @@ Route::resource("/catalog", CatalogController::class)->middleware('auth');
 Route::resource("/datas", DataController::class)->middleware('auth');
 // Route::resource("/dasbor", DataController::class)->middleware('auth');
 Route::get("/dasbor", [DataController::class, 'dash'])->middleware('auth');
+Route::get("/dasbor/approve{id}", [DataController::class, 'approval'])->middleware('auth');
+Route::get("/dasbor/reject{id}", [DataController::class, 'rejected'])->middleware('auth');
+// Route::get("/dasbor/reject", [DataController::class, 'rejecting'])->middleware('auth');
 
 
 
