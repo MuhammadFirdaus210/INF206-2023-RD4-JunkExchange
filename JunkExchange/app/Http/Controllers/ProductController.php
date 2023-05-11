@@ -11,8 +11,6 @@ use App\Models\Datas;
 use App\Models\User;
 
 
-
-
 class ProductController extends Controller
 {
 
@@ -29,8 +27,8 @@ class ProductController extends Controller
         $path = $request->file('photo')->storeAs('images', $fileName, 'public');
         $requestData["photo"] = $path;
         Product::create($requestData);
-        $users = User::all();
         $item = Datas::find($id);
+        $users = User::find($item->user_id);
         Notification::send($users, new exchangeNotif($item->name));
         return redirect('kirimpengajuan');
     }

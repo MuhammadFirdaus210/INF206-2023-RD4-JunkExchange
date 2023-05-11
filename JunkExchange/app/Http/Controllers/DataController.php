@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
+use illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Datas;
 
@@ -17,7 +18,7 @@ class DataController extends Controller
  
     public function dash()
     {   
-        $user = User::find(1);
+        $user = Auth::user();
         return view('dasbor')->with('user', $user);
     }
  
