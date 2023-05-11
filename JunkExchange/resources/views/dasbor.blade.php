@@ -85,18 +85,6 @@ JunkExchange | Dashboard
                               </div>
                             </div>
                         </div>
-                        @elseif($notification === null)
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <p class="card-text mx-1">Belum ada notifikasi nih</p>
-                            </div>
-                        </div>
-                        @else
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <p class="card-text mx-1">Belum ada notifikasi nih</p>
-                            </div>
-                        </div> 
                         @endif
                         @endforeach
                     </div>
