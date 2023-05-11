@@ -65,3 +65,6 @@ route::post('/logout', [LoginController::class, 'logout']);
 
 route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 route::post('/register', [RegisterController::class, 'store']);
+
+Route::resource("/product", ProductController::class)->middleware('auth');
+Route::get("/detailbarang", [ProductController::class, 'detail'])->middleware('auth');

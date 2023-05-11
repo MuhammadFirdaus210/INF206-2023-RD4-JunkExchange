@@ -19,6 +19,12 @@ class ProductController extends Controller
         $item = Datas::find($id);
         return view('product')->with('item', $item);
     }
+
+    public function detail() 
+    {
+        $product = product::all();
+        return view ('detailbarang')->with('product', $product);
+    }
  
     public function store(Request $request, $id)
     {   
