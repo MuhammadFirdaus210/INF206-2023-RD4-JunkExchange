@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Http\Request;
 use illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use App\Notifications\globalNotify;
 use App\Models\User;
 use App\Models\Datas;
@@ -22,9 +23,10 @@ class DataController extends Controller
     public function dash()
     {   
         $user = Auth::user();
-        $status = Product::find($user->id);
+        $status = Product::where('userTarget_id', $user->id)->get();
+        $productStatus = $status->first();
         return view('dasbor', [
-            'status' => $status
+            'status' => $productStatus
         ])->with('user', $user);
     }
 
@@ -33,7 +35,7 @@ class DataController extends Controller
         $user = Auth::user();
         $userTarget = User::find($id);
         $contact = Datas::find($user->id);
-        $status = Product::where('id', $user->id)->update(['status' => 'Disetujui']);
+        $status = Product::where('userTarget_id', $user->id)->update(['status' => 'Disetujui']);
         $message = 'Diterima';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('home');  
@@ -44,7 +46,7 @@ class DataController extends Controller
         $user = Auth::user();
         $userTarget = User::find($id);
         $contact = Datas::find($user->id);
-        $status = Product::where('id', $user->id)->update(['status' => 'Disetujui']);
+        $status = Product::where('userTarget_id', $user->id)->update(['status' => 'Disetujui']);
         $message = 'Ditolak';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('home');  
