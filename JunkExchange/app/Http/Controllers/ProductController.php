@@ -36,6 +36,7 @@ class ProductController extends Controller
         $userAct = Auth::user();
         Product::create([
             'user_id' => auth()->user()->id,
+            'userTarget_id' => $userTarget->id,
             'status' => $request->status,
             'name' => $request->name,
             'weight'=> $request->weight,
