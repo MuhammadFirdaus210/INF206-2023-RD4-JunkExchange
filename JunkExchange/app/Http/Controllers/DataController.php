@@ -8,6 +8,7 @@ use illuminate\Support\Facades\Auth;
 use App\Notifications\globalNotify;
 use App\Models\User;
 use App\Models\Datas;
+use App\Models\Product;
 
 
 class DataController extends Controller
@@ -21,7 +22,10 @@ class DataController extends Controller
     public function dash()
     {   
         $user = Auth::user();
-        return view('dasbor')->with('user', $user);
+        $status = Product::find($user->id);
+        return view('dasbor', [
+            'status' => $status
+        ])->with('user', $user);
     }
 
     public function approval($id)
@@ -29,6 +33,7 @@ class DataController extends Controller
         $user = Auth::user();
         $userTarget = User::find($id);
         $contact = Datas::find($user->id);
+        $status = Product::where('id', $user->id)->update(['status' => 'Disetujui']);
         $message = 'Diterima';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('home');  
@@ -38,8 +43,10 @@ class DataController extends Controller
     {   
         $user = Auth::user();
         $userTarget = User::find($id);
+        $contact = Datas::find($user->id);
+        $status = Product::where('id', $user->id)->update(['status' => 'Disetujui']);
         $message = 'Ditolak';
-        Notification::send($userTarget, new globalNotify($message));
+        Notification::send($userTarget, new globalNotify($message, $contact->number));
         return redirect('home');  
     }
 
