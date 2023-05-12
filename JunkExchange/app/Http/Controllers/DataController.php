@@ -43,6 +43,7 @@ class DataController extends Controller
     {   
         $user = Auth::user();
         $userTarget = User::find($id);
+        $contact = Datas::find($user->id);
         $status = Product::where('id', $user->id)->update(['status' => 'Disetujui']);
         $message = 'Ditolak';
         Notification::send($userTarget, new globalNotify($message, $contact->number));
