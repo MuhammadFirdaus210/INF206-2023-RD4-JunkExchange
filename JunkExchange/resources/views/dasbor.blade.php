@@ -84,7 +84,7 @@ JunkExchange | Dashboard
                                   </a>
                                 </form>
                                 @else
-                                <button class="btn btn-dark ps-2" disabled><i class=""></i>{{ $status->status }}</button>
+                                <button class="btn btn-dark ps-2" disabl><i class=""></i>{{ $status->status }}</button>
                                 <a href="/detailbarang">
                                   <button class="btn btn-primary ps-2"><i class="bi bi-book pe-2"></i>Detail</button>
                               </a>

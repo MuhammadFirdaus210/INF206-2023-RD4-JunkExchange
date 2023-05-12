@@ -11,5 +11,5 @@ class Product extends Model
     use HasFactory;
     protected $table = 'Product';
     protected $primaryKey = 'id';
-    protected $fillable = ['user_id', 'status' ,'name', 'weight', 'category', 'description', 'number', 'photo'];
+    protected $fillable = ['user_id', 'userTarget_id', 'status' ,'name', 'weight', 'category', 'description', 'number', 'photo'];
 }
