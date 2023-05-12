@@ -46,7 +46,7 @@ Route::get('/kirimpengajuan', function () {
 Route::get('/product/detail/{id}', [ProductController::class, 'index']);
 Route::post('/product/detail/{id}/store', [ProductController::class, 'store']); 
 
-Route::resource("/catalog", CatalogController::class)->middleware('auth');
+Route::resource("/catalog", CatalogController::class);
 
 
 Route::resource("/datas", DataController::class)->middleware('auth');
